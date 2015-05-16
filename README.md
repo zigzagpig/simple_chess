@@ -18,7 +18,7 @@
 
 ---
 ###程序包含的模块简要伪代码
-```
+```rb
 main//主函数
 	read_basic_word//读取关键汉字
 	read_chess_in//读取初始棋盘
