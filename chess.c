@@ -1,7 +1,4 @@
-
-//
-//  main.c
-//  chess
+//  chess.c
 //
 //  Created by zigzagpig on 15/3/12.
 //  Copyright (c) 2015年 zigzagpig. All rights reserved.
