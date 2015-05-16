@@ -1,7 +1,32 @@
-C 语言项目 － 象棋打谱程序
-开始写 rails 项目前的练手，寻找编程的感觉。
-
-简介：
-1、基本象棋功能
-2、游戏结束后输出棋谱文件
-3、简单的文字界面
+```rb
+main//主函数
+	read_basic_word//读取关键汉字
+	read_chess_in//读取初始棋盘
+		set_shuxing//设置棋子初始颜色
+	show//读取关键汉字
+	打开文件用于写入棋谱;
+	start//开始下棋 直到游戏结束
+		get_command//获取下棋指令
+		moves//根据指令移动
+			move_is_ok//判断下棋命令是否出界
+				name_zu//卒、兵
+				name_pao//炮
+					i_touch//四向搜索以判断能否移动，下同
+				name_ju//车
+					i_touch
+				name_ma//马
+				name_xiang//相、象
+				name_shi//士
+				name_jiang//将、帅
+					i_touch
+				上面//判断下棋命令是否符合棋子和移动规则
+				若是符合//执行 go 移动
+					go//指令合法则进行移动
+						pu//打谱
+						is_win//是否赢了结束
+						移动是否杀子;
+						show//刷新棋盘布局
+						回合结束,转换颜色;
+	关闭文件并结束;
+end
+```
